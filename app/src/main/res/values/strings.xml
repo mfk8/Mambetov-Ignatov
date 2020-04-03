@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">QuesQuiz</string>
+    <string name="category">Категории</string>
+
+    <string name="sports_category">Спорт</string>
+    <string name="tv_category">ТВ-Шоу</string>
+    <string name="movies_category">Кино</string>
+    <string name="words_category">English</string>
+    <string name="russia_category">Россия</string>
+    <string name="science_category">Наука</string>
+    <string-array name="category_title">
+        <item>@string/sports_category</item>
+        <item>@string/tv_category</item>
+        <item>@string/movies_category</item>
+        <item>@string/words_category</item>
+        <item>@string/russia_category</item>
+        <item>@string/science_category</item>
+    </string-array>
+
+    <string name="sports">sports</string>
+    <string name="tv">tv</string>
+    <string name="movies">movies</string>
+    <string name="words">words</string>
+    <string name="russia">russia</string>
+    <string name="science">science</string>
+    <string name="grid_image">Grid Image</string>
+    <string name="copyright">HSEapp</string>
+    <string-array name="category_ID">
+        <item>@string/sports</item>
+        <item>@string/tv</item>
+        <item>@string/movies</item>
+        <item>@string/words</item>
+        <item>@string/russia</item>
+        <item>@string/science</item>
+    </string-array>
+
+
+</resources>
