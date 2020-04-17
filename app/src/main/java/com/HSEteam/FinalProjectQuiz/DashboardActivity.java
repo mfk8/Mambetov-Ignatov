@@ -12,7 +12,14 @@ public class DashboardActivity extends AppCompatActivity {
     private GridView mGridView;
     private CategoryAdapter mCategoryAdapter;
     private ArrayList<CategoryItem> mCategoryItems;
-    private int[] mColors;
+    private int[] mColors = {
+            R.drawable.sports,
+            R.drawable.tv,
+            R.drawable.movies,
+            R.drawable.english,
+            R.drawable.russia,
+            R.drawable.science,
+    };
     private String[] mCategoryTitles;
     private String[] mCategoryID;
 
@@ -33,10 +40,9 @@ public class DashboardActivity extends AppCompatActivity {
         mCategoryItems = new ArrayList<>();
         mCategoryTitles = getResources().getStringArray(R.array.category_title);
         mCategoryID = getResources().getStringArray(R.array.category_ID);
+        //mColors = getResources().getIntArray(R.array.colors);
 
-        mColors = getResources().getIntArray(R.array.colors);
-
-        for(int i = 0; i< mCategoryTitles.length; i++) {
+        for(int i = 0; i < mCategoryTitles.length; i++) {
             mCategoryItems.add(new CategoryItem(mColors[i], mCategoryTitles[i], mCategoryID[i]));
             Log.d("TAG", "Title\t" + mCategoryTitles[i] + "\tID\t" + mCategoryID[i]);
         }

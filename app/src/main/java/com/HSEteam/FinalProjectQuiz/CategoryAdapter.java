@@ -46,7 +46,7 @@ public class CategoryAdapter extends ArrayAdapter<CategoryItem> {
             convertView.setTag(categoryViewHolder);
         }
         categoryViewHolder = (CategoryViewHolder) convertView.getTag();
-        categoryViewHolder.categoryImage.setBackgroundColor(categoryItem.getmBgColor());
+        categoryViewHolder.categoryImage.setImageResource(categoryItem.getmBgColor());
         categoryViewHolder.categoryTitle.setText(categoryItem.getmCategoryTitle());
         categoryViewHolder.categoryImage.setOnClickListener(new View.OnClickListener() {
             @Override
